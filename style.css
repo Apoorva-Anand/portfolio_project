@@ -21,17 +21,7 @@ body{
     align-items: center;
     z-index: 100;
 }
-/* .logo{
-    position: relative;
-    text-decoration: none;
-    color:#fff;
-    font-size: 20px;
-    font-weight: 600;
 
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 2s ease forwards;
-} */
 .navBar a{
     position: relative;
     display: inline-block;
@@ -40,7 +30,6 @@ body{
     font-size: 14px;
     font-weight: 400;
     margin-left: 25px;
-    /* margin-left: 35px; */
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
@@ -48,7 +37,7 @@ body{
 
 }
 
-/* aditional */
+
 
 .navBar ::after{
     content: "";
@@ -173,98 +162,7 @@ body{
     0 0 200px #E32460;
 }
 
-/* about 1 */
 
-/* #about{
-    padding: 80px 0;
-    color: #ababab;
-}
-
-.row{
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
-}
-
-.about-col-1{
-    flex-basis: 35%;
-
-}
-.about-col-1 img{
-    width: 100%;
-    border-radius:15px ;
-}
-.about-col-2{
-    flex-basis:60% ;
-}
-
-.subtitle{
-    font-size: 60px;
-    font-weight: 600;
-    color: white;
-   
-    
-}
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-.tab-links{
-   
-    margin-right: 50px;
-    font: size 18px; 
-    font-weight: 500;
-    cursor: pointer;
-    position: relative; */
-    
-
-    /* already commented */
-    /* opacity: 0;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 2s; */
-    /* <!-----------> */
-
-
-/* }
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background:hsl(192, 91%, 48%); 
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: .5s;
-
-}
-
-.tab-links.active-link::after{
-    width: 50%;
-
-}
-
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-
-}
-
-.tab-contents ul li span{
-    color: #E32460;
-    font-size: 14px;
-
-}
-.tab-contents{
-    display: none;
-}
-
-.tab-contents.active-tab{
-    display: block;
-} */
-
-
-
-/* about2 */
 
 .about{
     
@@ -272,7 +170,7 @@ body{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     gap: 1.5rem;
-    padding: 70px 10% 0;
+    padding: 70px 10% 0; 
    
 }
 .about-img img{
@@ -309,7 +207,7 @@ font-size: 60px;
 
 
 
-/* services */
+
 
 
 #services{
@@ -317,11 +215,21 @@ font-size: 60px;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+
+
+    
+    
 }
+
+.bx {
+    text-align: center;
+}
+
 .sub-title{
     text-align: center;
     font-size: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 60px;
+    
 }
 
 .sub-title span{
@@ -330,6 +238,7 @@ font-size: 60px;
 
 .container{
     padding: 90px;
+    
 
 }
 
@@ -337,13 +246,13 @@ font-size: 60px;
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(259px,1fr));
     grid-gap:40px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .services-list div{
     background-color: transparent;
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 13px;
+    padding: 20px;
+    font-size: 12px;
+    font-weight: 12px;
     border-right: 10px;
     border-radius: 20px;
     transition: background 0.5s, transform 0.5s;
@@ -400,20 +309,19 @@ font-size: 60px;
 
 
 
-/* skills */
+
 
 section{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
-.container1{
-    width:600px;
-    height:500px;
-    padding:75px 90px;
-    margin-left: 120px;
-}
+
+
+
+
 
 .heading1{
     text-align: center;
@@ -663,11 +571,13 @@ margin-top: 40px 0;
 
 
 
-/* portfolio */
+
 
 .main-text{
     padding-top: 130px;
     margin-top: 200px;
+    gap: 1rem;
+    padding: 70px 10px 10px 50px;
 
 }
 
@@ -686,9 +596,10 @@ margin-top: 40px 0;
     grid-template-columns: repeat(auto-fit,minmax(359px,auto));
 
 
-    /* aditional */
+    
     grid-gap:40px;
     margin-top: 50px;
+    
 }
 .row{
     position: relative;
@@ -697,7 +608,8 @@ margin-top: 40px 0;
     cursor:pointer;
 }
 .row img{
-    padding: 18px;
+    padding: 10px;
+    
     width: 100%;
     border-radius: 10px;
     display: block;
@@ -776,7 +688,7 @@ margin-top: 40px 0;
     0 0 20px #E32460,
     0 0 20px #E32460;
 }
-/* contact */
+
 
 
 .row1{
@@ -785,7 +697,8 @@ margin-top: 40px 0;
     flex-wrap: wrap;
 }
 .contact-left{
-    flex-basis:35% ;
+    flex-basis:30% ;
+    justify-content: center;
 }
 
 .contact-right{
@@ -914,63 +827,69 @@ footer{
 
 
 
-/* Responsive designs */
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 768px) {
+   
     .header {
         flex-direction: column;
-        align-items: flex-start; /* Stack items vertically */
+        align-items: flex-start; 
     }
 
     .navBar a {
-        margin-left: 0; /* Remove left margin for nav links */
-        margin-top: 10px; /* Add margin top for spacing */
+        margin-left: 0; 
+        margin-top: 10px; 
     }
 
     .home {
-        flex-direction: column; /* Stack home content vertically */
+        flex-direction: column; 
         padding: 50px 5%;
     }
 
     .about {
-        grid-template-columns: 1fr; /* Stack about sections on smaller screens */
+        grid-template-columns: 1fr; 
     }
 
     .contact-left,
     .contact-right {
-        flex-basis: 100%; /* Stack contact sections on smaller screens */
-        margin-bottom: 20px; /* Add spacing between sections */
+        flex-basis: 100%; 
+        margin-bottom: 20px; 
     }
 
     .portfolio-content {
-        grid-template-columns: 1fr; /* Stack portfolio items on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
 
 @media only screen and (max-width: 480px) {
     .home-content h1 {
-        font-size: 36px; /* Smaller font size for h1 */
+        font-size: 36px; 
     }
 
     .home-content h3 {
-        font-size: 24px; /* Smaller font size for h3 */
+        font-size: 24px; 
     }
 
     .btn-box {
-        padding: 10px 20px; /* Smaller button padding */
-        font-size: 14px; /* Smaller font size for buttons */
+        padding: 10px 20px; 
+        font-size: 14px; 
     }
 
     .about-text h2 {
-        font-size: 36px; /* Smaller font size for h2 */
+        font-size: 36px; 
     }
 
     .services-list div {
-        padding: 20px; /* Smaller padding for service items */
+        padding: 20px; 
     }
 
     .main-text h2 {
-        font-size: 36px; /* Smaller font size for main text */
+        font-size: 36px; 
     }
 }

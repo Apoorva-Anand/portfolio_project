@@ -5,12 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apoorva A</title>
     <link rel="stylesheet" href="style.css">
+    <link href="apple-touch-icon.png" rel="icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
+
+    <style>
+    /* Header and navbar styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(10, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+}
+
+.navBar a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 15px; /* Changed from margin-left to even margins */
+    transition: .3s;
+}
+
+/* NavBar hover effects */
+.navBar a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #E32460;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+.navBar a:hover {
+    color: #E32460;
+}
+
+.navBar a:hover::after {
+    width: 100%;
+}
+
+/* Updated home class */
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(images/background_img1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.container1{
+    width:40%;
+    height:500px;
+   
+    /* margin-left: 120px; */
+    padding: 50px 10% 0;
+}
+
+
+.home {
+        background-position: center right;
+        padding: 70px 5% 0;
+    }
+
+.home-content {
+        max-width: 50%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .home {
+        background-position: center right;
+        padding: 70px 5% 0;
+    }
+    
+    .home-content {
+        max-width: 50%;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .container1{
+    width:50%;
+    height:500px;
+   
+    /* margin-left: 120px; */
+    padding: 70px 10% 0; 
+}
+}
+
+@media screen and (max-width: 991px) {
+    .navBar a {
+        font-size: 13px;
+        margin: 0 10px;
+    }
+
+    .container1{
+    width:50%;
+    height:500px;
+   
+    /* margin-left: 120px; */
+    padding: 70px 10% 0; 
+}
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+    }
+
+    .navBar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navBar a {
+        margin: 5px 10px;
+        font-size: 12px;
+    }
+
+    .home {
+        padding-top: 100px;
+        background-attachment: scroll;
+    }
+
+    .home-content {
+        max-width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin: 0 20px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+
+    .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(10, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.container1{
+    width:60%;
+    height:500px;
+   
+    /* margin-left: 120px; */
+    padding: 70px 10% 0; 
+}
+    
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px 2%;
+    }
+
+    .navBar a {
+        margin: 3px 8px;
+        font-size: 11px;
+    }
+
+    .home {
+        background-position: center right;
+    }
+
+    .home-content {
+        padding: 15px;
+        margin: 0 10px;
+    }
+
+    .container1{
+    width:100%;
+    height:500px;
+   
+    /* margin-left: 120px; */
+    padding: 50px 10% 0; 
+}
+}
+    </style>
 </head>
 <body>
+
+    <!-- <header class="header">
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="menu-toggle">☰</label>
+        <nav class="navBar">
+            <a href="#" class="active" style="--i:1">HOME</a>
+            <a href="#about" style="--i:2">ABOUT</a>
+            <a href="#services" style="--i:3">SERVICES</a>
+            <a href="#skill" style="--i:4">SKILLS</a>
+            <a href="#project" style="--i:5">PROJECT</a>
+            <a href="#contact" style="--i:6">CONTACT</a>
+        </nav>
+    </header> -->
+
     <header class="header">
-        
+
         <nav class="navBar">
             <a href="#" style="--i:1" class="active">HOME</a>
             <a href="#about" style="--i:2">ABOUT</a>
@@ -30,9 +255,9 @@
         <p>passionate web designer specializing in crafting intuitive and visually stunning user interfaces.<br> With expertise in frontend design, I bring digital experiences to life through thoughtful design and precise execution.
         </p><br>
         <div class="home-sicons">
-            <a href="#" style="--i:6"><i class='bx bxl-whatsapp' ></i></a>
-            <a href="#" style="--i:7"><i class='bx bxl-linkedin'></i></a>
-            <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/Apoorva-Anand" style="--i:6"><i class='bx bxl-github'></i></a>
+            <a href="https://apoorva-anand.github.io/" style="--i:7"><i class='bx bxl-linkedin'></i></a>
+            <a href="" style="--i:8"><i class='bx bxl-instagram'></i></a>
             
         </div>
        <a href="#about" class="btn-box">Know me more</a>
@@ -40,53 +265,7 @@
         </div>
     </div>
 </div>
-<!-- about section1-->
 
-    <!-- <div id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="about-col-1">
-                    <img src="images/about.jpg" alt="image" height="auto" width="25%">
-                </div>
-
-                <div class="about-col-2">
-                    <h1 class="subtitle">About Me</h1><br>
-                    <p> I'm a skilled Frontend Web Designer with a passion for crafting seamless User Interfaces (UI) that elevate digital experiences. With expertise in HTML, CSS, JavaScript, and cutting-edge design tools, I bring innovative solutions to websites and web applications.
-
-                    </p><br><br>
-
-                    <div class="tab-titles ">
-                        <p class="tab-links active-link">Education</p>
-                        <p class="tab-links">Experience</p>
-                        
-                    </div>
-
-                    <div class="tab-contents active-tab">
-                        <ul>
-                            <li><span>2023</span><br>KVG College of Engineering</li>
-                            <li><span>2019</span><br>Govt. PU College</li>
-                            <li><span>2017</span><br>Vivekananda English Medium Highschool</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents">
-                        <ul>
-                            <li><span> Internship</span><br>FULL-STACK WEB DEVELOPMENT INTERN - ANASOFT, SULLIA: MyIPS School Automation Software is a comprehensive software solution designed to automate various
-                                administrative and academic processes of KVG IPS along with it’s 10 departments and cut down paperwork by 75%..</li>
-                            <li><span>Certification</span> <br>Completed JOSH MITHRA Scholarship in Java, Web Essentials and aptitude from ‘ETHNUS Codemithra’.</li>
-                       note:::::::::we can also make boxes  
-                        </ul>
-                    </div>
-
-                </div>
-
-               
-
-            </div>
-        </div>
-
-    </div> -->
 
 
 
@@ -149,11 +328,15 @@
  <!-- SKILLS -->
 
  
+ <h1 class="sub-title"> My <span>Skills</span></h1>
 
 <section id="skill">
-    <h1 class="sub-title"> My <span>Skills</span></h1>
+
+    
+   
     
     <div class="container1" >
+        
     <h1 class="heading1">Technical skills</h1>
     <div class="technicalBars">
 
@@ -191,8 +374,6 @@
     <div class="progress-line java">
         <span></span>
     </div>
-
-    
 
     </div>
 </div>
@@ -246,7 +427,7 @@
 </div>
 </section>
 
-<!-- portfolio -->
+<!-- portfolio/project -->
 
 
 <section>
@@ -259,8 +440,11 @@
                     <img src="images/ai judge.jpg" alt="img" >
                     <div class="layer">
                         <h5>AI-Judge Project</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error voluptatum magnam iure? Repudiandae quod fugiat sed voluptatum vitae atque tenetur esse. Inventore neque, fuga placeat ad non nisi vel.</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
+<p>AI judge designed to provide judicial assistance based on fact description and contributes in judicial
+    assistance with the precision of more than 70%.
+    This project proposes a method for predicting criminal judgments in the legal domain with high accuracy,
+    emphasizing maximum precision.</p>                       
+     <a href="#"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
 
@@ -268,7 +452,8 @@
                     <img src="images/expense_tracker.png" alt="img">
                     <div class="layer">
                         <h5>expense Tracker</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error voluptatum magnam iure? Repudiandae quod fugiat sed voluptatum vitae atque tenetur esse. Inventore neque, fuga placeat ad non nisi vel.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, repellat libero! Tempore eos eius sint atque et consequuntur nemo quae qui? Nisi ut perferendis dignissimos quasi debitis nulla eaque voluptatum?
+                            </p>
                         <a href="#"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
@@ -278,7 +463,9 @@
                     <img src="images/vehicle_showroom management.jpg" alt="img">
                     <div class="layer">
                         <h5>Vehicle Showroom management System</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non error voluptatum magnam iure? Repudiandae quod fugiat sed voluptatum vitae atque tenetur esse. Inventore neque, fuga placeat ad non nisi vel.</p>
+                        <p>It is designed to manage various functionalities of a vehicle showroom and is efficient in reducing the
+                            processing time by 50%.
+                            This system allows users to surf and fetch details on vehicles in the showroom.</p>
                         <a href="#"><i class='bx bx-link-external'></i></a>
                     </div>
                 </div>
@@ -303,14 +490,15 @@
         <div class="row1">
             <div class="contact-left">
                 <h1 class="sub-title">Contact <span> me</span></h1>
-                <p><i class='bx bx-send' style='color: #e32460'  ></i>apoorva052001@gmail.com</p>
-                <p><i class='bx bxs-phone-call' style='color: #e32460' ></i>9686120741</p>
-                <div class="sicons">
-                    <a href=""><i class='bx bxl-linkedin'></i></a>
+                <p style="text-align: center;"><i class='bx bx-send' style='color: #e32460'  ></i>apoorva052001@gmail.com</p>
+                <p style="text-align: center;"><i class='bx bxs-phone-call' style='color: #e32460' ></i>9686120741</p>
+                <div class="sicons" style="text-align: center;">
+                    <a href="https://www.linkedin.com/in/apoorva-anandh"><i class='bx bxl-linkedin'></i></a>
                     <a href=""><i class='bx bxl-instagram'></i></a>
-                    <a href=""><i class='bx bxl-whatsapp' ></i></a>
+                    <a href="https://apoorva-anand.github.io/"><i class='bx bxl-github'></i></a>
+                   
                 </div>
-                <a href="/images/Apoorva A.pdf" download  class=" btn btn1">Download CV</a>
+                <a style="margin-left: 39%;" href="/images/Apoorva A.pdf" download  class=" btn btn1">Download CV</a>
             </div>
             <div class="contact-right">
 
